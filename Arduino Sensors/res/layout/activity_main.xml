@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtString"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/testView1"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="LED ON" />
+
+    <Button
+        android:id="@+id/buttonOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonOn"
+        android:layout_alignParentRight="true"
+        android:text="LED OFF" />
+
+    <TextView
+        android:id="@+id/sensorView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorView0"
+        android:layout_centerHorizontal="true"
+        android:text="Sensor 1 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sensorView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorView1"
+        android:layout_centerHorizontal="true"
+        android:text="Sensor 2 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sensorView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorView2"
+        android:layout_centerHorizontal="true"
+        android:text="Sensor 3 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sensorView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:text="Sensor 0 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
